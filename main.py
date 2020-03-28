@@ -7,7 +7,7 @@ months={1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',
 weekday={0:'Monday',1:'Tuesday',2:'Wednesday',3:'Thursday',4:'Friday',5:'Saturday',6:'Sunday'}
 amPm={0:'AM',1:'PM'}
 #month,year,day,hour,minute,second
-token="NjkyODEzNzMwODI3OTkzMTQ5.Xnz_Ng.qwfQt5LnZBE55r4iuOE2Y1MIBDA"
+token="NjkyODEzNzMwODI3OTkzMTQ5.Xn6aSQ.DdLFxG58bvvpFDPYeJlp2WQk42s"
 commandPrefix="/"
 client = commands.Bot(command_prefix=commandPrefix)
 @client.event
