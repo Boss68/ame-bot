@@ -7,7 +7,7 @@ months={1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',
 weekday={0:'Monday',1:'Tuesday',2:'Wednesday',3:'Thursday',4:'Friday',5:'Saturday',6:'Sunday'}
 amPm={0:'AM',1:'PM'}
 #month,year,day,hour,minute,second
-token="NjkyODEzNzMwODI3OTkzMTQ5.Xn6aSQ.DdLFxG58bvvpFDPYeJlp2WQk42s"
+token="NjkyODEzNzMwODI3OTkzMTQ5.XoO1BA.Kt516dFLWEmyZQ7QLgSo-BxVuYE"
 commandPrefix="/"
 client = commands.Bot(command_prefix=commandPrefix)
 @client.event
@@ -85,7 +85,6 @@ async def printArchive():
     embed=discord.Embed(title="Archive",type="rich",description=embedStr,colour=discord.Colour.gold())
     await client.get_guild(691343455590547477).get_channel(693153292938903661).send(embed=embed)
     todo.close()
-
 @client.event
 async def on_message(message):
   if message.author.id!=692813730827993149 and message.content[0:len(commandPrefix)]!=commandPrefix:
@@ -99,7 +98,9 @@ async def on_message(message):
     if "God help us" in message.content:
       await message.channel.send("Hell no.")
     if "Roblox bad lol" in message.content:
-      await message.channel.send("GG, "+ message.author.mention + ", you just advanced to level "+str(random.randint(0,3641397469861978469786))+"!") 
+      await message.channel.send("GG, "+ message.author.mention + ", you just advanced to level "+str(random.randint(0,3641397469861978469786))+"!")      
+    if "!" in message.content or "Vc" in message.content:
+      await message.channel.send("FUCK YOU "+message.author.mention+"! If you're dumb enough to buy a new car this weekend, you're a big enough schmuck to come to Big Bill Hell's Cars! Bad deals! Cars that break down! if you think you're gonna find a bargain at Big Bill's, YOU CAN KISS MY ASS! It's our belief that you're such a stupid motherfucker, you'll fall for this bullshit! GUARANTEED! If you find a better deal, SHOVE IT UP YOUR UGLY ASS! You heard us right! SHOVE IT UP YOUR UGLY ASS! Bring your tray, bring your timer, bring your wife! WE'LL FUCK HER! THAT'S RIGHT! WE'LL FUCK YOUR WIFE! Because at Big Bill Hell, you're about six ways from Sunday. Take a hike to Big Bill Hell, HOME OF CHALLENGE PISSING, that's right, challenge pissing! How does it work? If you can piss 60 feet straight up and not get wet, you get no downpayment! Don't wait, don't delay, DON'T FUCK WITH US, or we'll rip your nuts off! Only at Big Bill Hell's, the only dealer that tells you to FUCK OFF! HURRY UP, ASSHOLE! This event ends the minute after you write us a check, and I'd better not bounce or you're a dead motherfucker! GO TO HELL! Big Bill Hell's Cars, all the wares the filthiest, and exclusive home of the meanest sons of bitches in the state of Maryland, GUARANTEED!")
   elif message.content[0:len(commandPrefix)]==commandPrefix:
     await client.process_commands(message)
 client.run(token)
