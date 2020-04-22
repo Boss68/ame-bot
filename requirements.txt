@@ -1,1 +1,1 @@
-discord>=0
+discord==1.4.0a
